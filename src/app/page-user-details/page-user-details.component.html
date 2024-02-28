@@ -1,0 +1,10 @@
+<app-header titulo="{{title}}"></app-header>
+
+<div class="container ">
+    <img src={{userData.avatar}} class="rounded-circle" alt="...">
+    <h1>{{userData.first_name}} {{userData.last_name}}</h1>
+    <hr>
+    <button href="#" class="btn btn-primary">{{userData.email}}</button>
+    <br><br>
+    <button class="btn btn-primary" (click)="btBack_Click()">Volver</button>
+</div>

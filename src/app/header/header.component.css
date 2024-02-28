@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 20px;
+
+    background: rgb(210,241,254);
+    background: linear-gradient(180deg, rgb(230, 248, 255) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: 1px 0px 8px 0px rgba(24,64,80,1);
+    height: 70px;
+}
+hr {
+    margin-top: 0;
+    margin-bottom: 30px;
+}

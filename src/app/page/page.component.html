@@ -1,0 +1,16 @@
+<app-header titulo="{{title}}"></app-header>
+<button class="btn btn-lg btn-outline-primary" (click)="btAddNew_Click()"
+    style="float: right; margin-right: 35px;">Añadir usuario</button>
+<h1>Lista de usuarios</h1>
+<p>Resultado de pedir los usuarios a regres</p>
+
+<div class="users">
+    @for(user of userList; track user.id) {
+    <app-user [userData]="user"></app-user>
+    }
+</div>
+
+<div class="paginationContainer">
+    <ngb-pagination [collectionSize]="totalElements" [(page)]="currentPage" aria-label="Pagination"
+        (pageChange)="onPageChanged()" />
+</div>

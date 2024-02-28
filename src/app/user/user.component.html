@@ -1,0 +1,19 @@
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src={{userData.avatar}} class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h1 class="card-title">{{userData.first_name}} {{userData.last_name}}</h1>
+                <p class="card-text">{{userData.email}}</p>
+
+                <div class="btContainer">
+                    <button class="btn btn-primary" (click)="btShowDetails()"><i
+                            class="fa-solid fa-circle-info"></i></button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-pen"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
